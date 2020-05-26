@@ -1,0 +1,637 @@
+html {
+    scroll-behavior: smooth;
+}
+
+bodu {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section-title {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+
+.section-title h1 {
+    display: inline-block;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #000000;
+    margin: 0 0 10px;
+    position: relative;
+
+}
+
+.section-title h1:before {
+    content: '';
+    left: 0;
+    position: absolute;
+    height: 2px;
+    right: 30%;
+    background-color: #FF6600;
+    bottom: 0px;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+/* Header */
+header {
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    border-bottom: 1px solid #FF6600;
+    padding: 0px 15px;
+    z-index: 10;
+    background-color: black;
+}
+
+header .row {
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .brand-name a {
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+    color: #FF6600;
+    text-transform: uppercase;
+    position: relative;
+}
+
+header .brand-name a::before {
+    content: '';
+    height: 3px;
+    background-color: #FF6600;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+
+
+
+header .navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header .navbar ul li {
+    display: inline-block;
+    margin-left: 35px;
+}
+
+header .navbar ul li a {
+    font-size: 15px;
+    text-decoration: none;
+    line-height: 72px;
+    display: block;
+    color: #FF6600;
+    font-weight: 600;
+    position: relative;
+}
+
+header .navbar ul li a::before {
+    content: '';
+    height: 3px;
+    background-color: #FF6600;
+    width: 0%;
+    position: absolute;
+    right: 0px;
+    bottom: -1px;
+    transition: all .5s ease;
+}
+
+header .navbar ul li a:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+header .navbar ul li a.active::before {
+    width: 100%;
+    left: 0;
+}
+
+
+/* Pocetna */
+
+
+.home {
+    min-height: 100vh;
+    background-image: url(slike/pocetna2.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 15px;
+}
+
+.home .full-screen {
+    min-height: 100vh;
+
+
+
+}
+
+.home .home-content {
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.home .home-content .block {
+    flex: 0 0 75%;
+    max-width: 75%;
+    padding-left: 35px;
+    border-left: 5px solid #FF6600;
+    margin-top: 50px;
+
+
+}
+
+.home .home-content .block h6 {
+    color: #FF6600;
+    font-size: 25px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+.home .home-content .block h1 {
+    color: #FF6600;
+    font-size: 70px;
+    font-weight: 600;
+    margin: 0 0 10;
+    padding: 0;
+}
+
+.home .home-content .block h2 {
+    color: #FF6600;
+    font-size: 60px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+/* O nama  */
+.about-us {
+    padding: 100px 15px;
+    background-color: #ffffff;
+
+}
+
+.about-us .about-content .img {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+}
+
+.about-us .about-content .img img {
+    width: 100%;
+    display: block;
+
+}
+
+.about-us .about-content .text {
+    flex: 0 0 66.66%;
+    max-width: 66.66%;
+    padding-left: 30px;
+}
+
+.about-us .about-content .text h3 {
+    font-size: 25px;
+    font-weight: 600;
+    margin: 0 0 5px;
+    color: #000000;
+}
+
+.about-us .about-content .text p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #838383;
+    margin: 0 0 20px;
+
+}
+
+.about-us .about-content .text .info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-us .about-content .text .info .list {
+    flex: 0 0 calc(50% - 15px);
+    max-width: calc(50% - 15px);
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 10px;
+
+}
+
+.about-us .about-content .text .info .list label {
+    padding-right: 10px;
+    color: #000000;
+    font-weight: 600;
+    font-size: 15px;
+
+
+}
+
+.about-us .about-content .text .info .list p {
+    margin: 0;
+}
+
+.about-us .about-content .text .social-links {
+    padding-top: 30px;
+}
+
+.about-us .about-content .text .social-links a {
+    height: 30px;
+    width: 30px;
+    background-color: #000000;
+    border-radius: 3px;
+    display: inline-block;
+    border: 1px solid #000000;
+    line-height: 28px;
+    text-align: center;
+    margin: 0 1px;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.about-us .about-content .text .social-links a:hover {
+    background-color: transparent;
+}
+
+.about-us .about-content .text .social-links a .fa {
+    color: #ffffff;
+    font-size: 12px;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.about-us .about-content .text .social-links a:hover .fa {
+    color: #000000;
+}
+
+/* Desavanja */
+.desavanje {
+    background-color: #f5f8fd;
+    padding: 100px 0px 70px;
+
+}
+
+.desavanje .section-title h1:before {
+    left: 30%;
+
+}
+
+.desavanje .desavanje-content {
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.desavanje .desavanje-content .box {
+    padding: 30px;
+    flex: 0 0 calc(33.33% - 20px);
+    max-width: calc(33.33% - 20px);
+    margin-bottom: 30px;
+    border: 1px solid #eeeeee;
+    text-align: center;
+    position: relative;
+}
+
+.desavanje .desavanje-content .box::before {
+    content: '';
+    height: 2px;
+    background-color: #FF6600;
+    position: absolute;
+    bottom: 0px;
+    width: 50px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: all .5s ease;
+
+}
+
+.desavanje .desavanje-content .box:hover::before {
+    width: 100%;
+}
+
+.desavanje .desavanje-content .box .icon {
+    height: 104px;
+    width: 104px;
+    margin: 15px auto 20px;
+    text-align: center;
+    border: 2px solid #FF6600;
+}
+
+.desavanje .desavanje-content .box .icon .fa {
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.desavanje .desavanje-content .box h5 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+    margin: 0;
+}
+
+.desavanje .desavanje-content .box p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #838383;
+    margin: 10px 0 10px;
+
+}
+
+/* Galerija */
+.galerija {
+    background-color: #f5f8fd;
+    padding: 100px 15px;
+
+}
+
+.galerija .section-title h1:before {
+    left: 30%;
+}
+
+.galerija .galerija-slike {
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+}
+
+.galerija .galerija-slike .item {
+    flex: 0 0 calc(33.33% - 10px);
+    max-width: calc(33.33% - 10px);
+    margin-bottom: 16px;
+    position: relative;
+    background-color: #FF6600;
+}
+
+.galerija .galerija-slike .item img {
+    width: 100%;
+    display: block;
+}
+
+.galerija .galerija-slike .item .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 10;
+    display: none;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: all .5s ease;
+
+}
+
+.galerija .galerija-slike .item:hover .overlay {
+    display: flex;
+    opacity: 1;
+}
+
+.galerija .galerija-slike .item .overlay .fa {
+    height: 50px;
+    width: 50px;
+    background-color: #FF6600;
+    color: #ffffff;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    animation: galleryIcon .8s ease;
+
+}
+
+.galerija .galerija-slike .item:hover .overlay .fa {
+    -webkit-animation: galleryIcon .8s ease;
+    animation: galleryIcon .8s ease;
+}
+
+@keyframes galleryIcon {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.galerija .galerija-slike .item .overlay h4 {
+    margin-top: 15px;
+    font-size: 25px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.galerija .galerija-slike .item:hover .overlay h4 {
+    -webkit-animation: galleryText .8s ease;
+    animation: galleryText .8s ease;
+}
+
+@keyframes galleryText {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* full screen */
+.fullScreen {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.fullScreen.show {
+    display: flex;
+}
+
+.fullScreen.hide {
+    display: none;
+}
+
+.fullScreen .close-full-screen {
+    height: 35px;
+    width: 35px;
+    background-color: #ffffff;
+    color: #FF6600;
+    text-align: center;
+    line-height: 35px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 101;
+}
+
+.full-screen img {
+    max-width: 90%;
+    max-height: 80%;
+    display: block;
+}
+
+/* istorija */
+.istorija {
+    background-color: #f5f8fd;
+    padding: 100px 0px 70px;
+
+}
+
+.istorija .istorija-title h1:before {
+    left: 30%;
+
+}
+
+.istorija .istorija-content {
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.istorija .istorija-content .box {
+    padding: 30px;
+    flex: 0 0 calc(33.33% - 20px);
+    max-width: calc(33.33% - 20px);
+    margin-bottom: 30px;
+    border: 1px solid #eeeeee;
+    text-align: center;
+    position: relative;
+}
+
+.istorija .istorija-content .box::before {
+    content: '';
+    height: 2px;
+    background-color: #FF6600;
+    position: absolute;
+    bottom: 0px;
+    width: 50px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: all .5s ease;
+
+}
+
+.istorija .istorija-content .box:hover::before {
+    width: 100%;
+}
+
+.istorija .istorija-content .box .icon {
+    height: 104px;
+    width: 104px;
+    margin: 15px auto 20px;
+    text-align: center;
+    border: 2px solid #FF6600;
+}
+
+.istorija .istorija-content .box .icon .fa {
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.istorija .istorija-content .box h5 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+    margin: 0;
+}
+
+.istorija .istorija-content .box p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #838383;
+    margin: 10px 0 10px;
+
+}
+
+#footer {
+    clear: both;
+    Background: #000000;
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+#footer p {
+    color: #FF6600;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 10px 0 10px;
+}
